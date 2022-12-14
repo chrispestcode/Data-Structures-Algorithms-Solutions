@@ -38,16 +38,16 @@
 */
 
 public class LCAofBinaryTree {
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
- // double dfs w/ postorder traversal
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     *     int val;
+     *     TreeNode left;
+     *     TreeNode right;
+     *     TreeNode(int x) { val = x; }
+     * }
+     */
+    // double dfs w/ postorder traversal
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         Queue<TreeNode> pQue = new LinkedList<>();
@@ -58,10 +58,10 @@ public class LCAofBinaryTree {
         //     TreeNode node = pQue.poll();
         //     System.out.print(node.val + " -> ");
         //     newPQue.offer(node);
-        // }
+        //}
         // System.out.println(" ");
-         dfs(root, q, qQue);
-         Queue<TreeNode> newQQue = new LinkedList<>();
+        dfs(root, q, qQue);
+        Queue<TreeNode> newQQue = new LinkedList<>();
         // while(qQue.size() > 0) {
         //     TreeNode node = qQue.poll();
         //     System.out.print(node.val + " -> ");
