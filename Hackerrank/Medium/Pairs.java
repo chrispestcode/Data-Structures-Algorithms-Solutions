@@ -115,3 +115,11 @@ public class Pairs {
         bufferedWriter.close();
     }
 }
+
+/*
+    On "what's the max size of hashmap?"
+    size() method is an int, so Integer.MAX_VALUE . However, there is no max size on the actual data structure, so, internally,
+    the size() value will overflow, but the structure can still grow.
+
+    https://stackoverflow.com/questions/7632126/maximum-size-of-hashset-vector-linkedlist#:~:text=MAX_VALUE%20(i.e.%202147483647%2C%20roughly%202,of%20an%20array%20in%20Java.&text=A%20HashMap%20uses%20an%20array,MAX_VALUE%20)
+ */
