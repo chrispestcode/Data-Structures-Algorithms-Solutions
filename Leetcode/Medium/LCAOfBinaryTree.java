@@ -37,16 +37,18 @@
             Instead of starting from root node again for second node, do a single full DFS looking for both nodes.
 */
 
-public class LCAofBinaryTree {
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     *     int val;
-     *     TreeNode left;
-     *     TreeNode right;
-     *     TreeNode(int x) { val = x; }
-     * }
-     */
+import java.util.LinkedList;
+import java.util.Queue;
+
+class LCAofBinaryTree {
+     // Definition for a binary tree node.
+      public class TreeNode {
+          int val;
+          TreeNode left;
+          TreeNode right;
+          TreeNode(int x) { val = x; }
+      }
+
     // double dfs w/ postorder traversal
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

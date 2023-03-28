@@ -1,6 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
 
-
-class Solution {
+class PalindromePartitions {
     public List<List<String>> partition(String s) {
         List<List<String>> pals = new ArrayList<>();
         int l = s.length() / 2;
